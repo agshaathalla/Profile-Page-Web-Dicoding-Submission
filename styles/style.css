@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 40px;
+    background-color: #C9DABF;
+    color: #5F6F65;
+    text-align: center;
+}
+
+nav {
+    background-color: #b7cfa9;
+    padding: 5px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #5F6F65;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2em;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 180px;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+main{
+    background-color: #808D7C;
+    display: flex;
+    gap: 1rem;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+}
+
+header {
+    display: inline;
+}
+
+.github-link {
+    text-decoration: none;
+}
+
+a {
+    color: #5F6F65;
+}
+
+.card-slider-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-slider {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-slider img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    padding: 20px;
+    color: #5F6F65;
+    background-color: #C9DABF;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 750px) {
+    nav a {
+        text-align: center;
+    }
+
+    main {
+        flex-flow: column nowrap;
+    }
+
+    #content {
+        padding: 0;
+    }
+
+    .card-slider-container {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav ul {
+        padding-inline: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .card-slider {
+        width: 100%;
+    }
+}
